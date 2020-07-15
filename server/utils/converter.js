@@ -1,8 +1,12 @@
-function convertToF(temperature) {
+function convertFToK(temperature) {
   //TODO
 }
 
-function convertToC(temperature) {
+function convertCToK(temperature) {
+  //TODO
+}
+
+function convertFToC(temperature) {
   //TODO
 }
 
