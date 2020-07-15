@@ -1,5 +1,5 @@
 function convertFToK(temperature) {
-  return (temperature + 459.67)*(5/9);
+  return (temperature + 459.67) * (5 / 9);
 }
 
 function convertCToK(temperature) {
@@ -7,7 +7,7 @@ function convertCToK(temperature) {
 }
 
 function convertFToC(temperature) {
-  return (temperature - 32) * 5/9;
+  return ((temperature - 32) * 5) / 9;
 }
 
 module.exports = {
