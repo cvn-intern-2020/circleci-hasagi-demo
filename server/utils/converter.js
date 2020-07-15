@@ -3,6 +3,7 @@ function convertFToK(temperature) {
 }
 
 function convertCToK(temperature) {
+  console.log(temperature)
   return temperature + 273.15;
 }
 
