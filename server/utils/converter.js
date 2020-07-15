@@ -1,5 +1,5 @@
 function convertFToK(temperature) {
-  //TODO
+  return (temperature + 459.67)*(5/9);
 }
 
 function convertCToK(temperature) {
