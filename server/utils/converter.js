@@ -7,10 +7,11 @@ function convertCToK(temperature) {
 }
 
 function convertFToC(temperature) {
-  //TODO
+  return (temperature - 32) * 5/9;
 }
 
 module.exports = {
   convertToC: convertToC,
   convertToF: convertToF,
+  convertFToC: convertFToC
 };
