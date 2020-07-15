@@ -23,6 +23,12 @@ module.exports = {
         exports: "never",
       },
     ],
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
     quotes: [2, "double"],
     indent: ["error", 2],
   },
