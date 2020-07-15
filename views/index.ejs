@@ -4,16 +4,23 @@
 <head>
     <meta charset="utf-8">
     <title>Home</title>
-</head>
 
-<body>
-
+  </head>
+  <body>
+ 
     <form action="/ftok" method="POST">
         <label for="f2k">Fahrenheit to kelvin</label>:
         <input type="text" id="temp" name="temperature">
         <input type="submit" value="Result">
 
     </form>
+
+    <form id="form-id" action="/ctok" method="post" target="_blank">
+        <label for="ctok">Convert Celsius to Kelvin</label>
+        <input type="text" id="ctok" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+      
 
     <form action="/ftoc" method="POST">
         <label for="f2c">Fahrenheit to Celsius</label>:
@@ -22,5 +29,6 @@
 
     </form>
 </body>
+
 
 </html>
