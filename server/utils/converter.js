@@ -3,7 +3,7 @@ function convertFToK(temperature) {
 }
 
 function convertCToK(temperature) {
-  //TODO
+  return temperature + 273.15;
 }
 
 function convertFToC(temperature) {
