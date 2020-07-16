@@ -16,7 +16,6 @@ app.set("views", "./views");
 app.get("/", function (request, response) {
   return response.render("index");
 });
-
 app.post("/ctok", function (request, response) {
   return response.render("result", {
     source: "Celsius",
