@@ -1,10 +1,12 @@
+const validate = require("./validate");
 function convertFToK(temperature) {
-  return (temperature + 459.67) * (5 / 9);
+  if(validate.validateFtoK(temperature)) return (temperature + 459.67) * (5 / 9);
+  return false;
 }
 
 function convertCToK(temperature) {
-  console.log(temperature);
-  return temperature + 273.15;
+  if(validate.validateCtoK(temperature))   return temperature + 273.15;
+  return false;
 }
 
 function convertFToC(temperature) {
