@@ -5,6 +5,11 @@
     <title>Home</title>
   </head>
   <body>
-    Your Conversion <%= conversion %> result is : <%= value %>
+    <% if (value  == false) { %>
+      <p> Your Conversion <%= conversion %> result can not be done</p>
+      <%} else { %>
+      <p> Your Conversion <%= conversion %> result is: <%=value %></p>
+      <% } %>
+    
   </body>
 </html>
