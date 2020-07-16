@@ -16,14 +16,16 @@ jobs:
     steps:
       - checkout
       - node/with-cache:
-        - run: npm run eslint
+        steps:
+          - run: npm run eslint
   unit-test:
     executor:
       name: node/default
     steps:
       - checkout
       - node/with-cache:
-        - run: npm test
+        steps:
+          - run: npm test
 workflows:
     build-and-test:
       jobs:
