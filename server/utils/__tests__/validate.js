@@ -1,7 +1,7 @@
 const validate = require("../validate");
 
 test("validate F To K", function () {
-  expect(validate.validateFtoK(-459.67)).toBe(false);
+  expect(validate.validateFtoK(-459.7)).toBe(false);
 });
 
 test("validate F To K", function () {

@@ -9,11 +9,11 @@ test("convert 0 C To K", function () {
 });
 
 test("convert 0 C To K", function () {
-  expect(converter.convertCToK(-300)).toBeCloseTo(false);
+  expect(converter.convertCToK(-300)).toBe(false);
 });
 
 test("convert 0 C To K", function () {
-  expect(converter.convertCToK(-273.15)).toBeCloseTo(0);
+  expect(converter.convertCToK(-273.15)).toBeCloseTo(0, 1);
 });
 
 test("convert F To K", function () {
@@ -25,11 +25,11 @@ test("convert F To K", function () {
 });
 
 test("convert F To K", function () {
-  expect(converter.convertFToK(-459.67)).toBeCloseTo(false);
+  expect(converter.convertFToK(-459.67)).toBe(0, 2);
 });
 
 test("convert F To K", function () {
-  expect(converter.convertFToK(-459.65)).toBeCloseTo(0);
+  expect(converter.convertFToK(-459.65)).toBeCloseTo(0.0, 1);
 });
 
 test("convert 30 C To K", function () {
