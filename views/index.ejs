@@ -8,23 +8,15 @@
   </head>
   <body>
  
-    <form action="/ftok" method="POST">
-        <label for="f2k">Fahrenheit to kelvin</label>:
+    <form action="/results" method="POST">
+
+        <label for="Temperature Converter">Temperature Converter</label>:
         <input type="text" id="temp" name="temperature">
-        <input type="submit" value="Result">
-
-    </form>
-
-    <form id="form-id" action="/ctok" method="post" target="_blank">
-        <label for="ctok">Convert Celsius to Kelvin</label>
-        <input type="text" id="ctok" name="temperature_1">
-        <input type="submit" value="Submit">
-    </form>
-      
-
-    <form action="/ftoc" method="POST">
-        <label for="f2c">Fahrenheit to Celsius</label>:
-        <input type="text" id="tempF" name="temperature_2">
+        <select name="conversion" id="conversions" value="Choose">
+            <%for (var i = 0; i < conversions.length; i++) {%>
+                <option value="volvo"><%=conversions[i]%></option>
+            <% } %>
+        </select>
         <input type="submit" value="Result">
 
     </form>
