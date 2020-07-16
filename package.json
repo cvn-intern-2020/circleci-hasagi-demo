@@ -7,7 +7,7 @@
     "eslint": "eslint .",
     "eslint:fix": "eslint . --fix",
     "test": "jest",
-    "start": "node ./server/bin/www.js"
+    "start": "node ./server/bin/server.js"
   },
   "author": "",
   "license": "ISC",

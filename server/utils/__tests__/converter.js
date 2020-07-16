@@ -1,7 +1,4 @@
 const converter = require("../converter");
-const supertest = require("supertest");
-const app = require("../../bin/www.js");
-const request = supertest(app);
 
 test("convert F To C", function () {
   expect(converter.convertFToC(32)).toBe(0);
@@ -37,18 +34,4 @@ test("convert F To K", function () {
 
 test("convert 30 C To K", function () {
   expect(converter.convertCToK(30)).toBeCloseTo(303.15);
-});
-
-describe("Test API render", () => {
-  it("Get HomePage", async () => {
-    await request.get("/").then((response) => {
-      expect(response.statusCode).toEqual(200);
-    });
-  });
-
-  it("Post Test Error", async () => {
-    await request.post("/ftok").then((response) => {
-      expect(response.statusCode).toEqual(404);
-    });
-  });
 });
