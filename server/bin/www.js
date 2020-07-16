@@ -14,29 +14,15 @@ app.set("view engine", "ejs");
 app.set("views", "./views");
 
 app.get("/", function (request, response) {
-  return response.render("index");
-});
-app.post("/ctok", function (request, response) {
-  return response.render("result", {
-    source: "Celsius",
-    target: "Kelvin",
-    value: converter.convertCToK(parseFloat(request.body.temperature_1)),
+  return response.render("index", {
+    conversions: ["Convert F to C", "Convert C to K", "Convert F to K"],
   });
 });
 
-app.post("/ftok", function (request, response) {
+app.post("/convert", function (request, response) {
   return response.render("result", {
-    source: "fahrenheit",
-    target: "kelvin",
-    value: converter.convertFToK(parseFloat(request.body.temperature)),
-  });
-});
-
-app.post("/ftoc", function (request, response) {
-  return response.render("result", {
-    source: "fahrenheit",
-    target: "celsius",
-    value: converter.convertFToC(parseFloat(request.body.temperature_2)),
+    conversion: request.body.conversion,
+    value: converter.convertCToK(parseFloat(request.body.temperature)),
   });
 });
 
